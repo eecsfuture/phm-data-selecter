@@ -44,7 +44,7 @@ def filter_and_copy_files():
 
 # 创建主窗口
 root = tk.Tk()
-root.title("文件筛选复制工具")
+root.title("phm文件筛选复制工具")
 root.geometry("600x250")
 
 # 源文件夹
@@ -64,7 +64,7 @@ target_entry.pack(side="left", fill="x", expand=True)
 tk.Button(target_frame, text="浏览", command=select_target_folder).pack(side="left", padx=5)
 
 # 后缀输入
-tk.Label(root, text="输入后缀（用逗号分隔，例如 .AD07.lz4,.AD08.lz4）:").pack(anchor="w", padx=10, pady=(10, 0))
+tk.Label(root, text="输入后缀（用英文逗号分隔，例如 .AD07.lz4,.AD08.lz4）:").pack(anchor="w", padx=10, pady=(10, 0))
 suffixes_entry = tk.Entry(root)
 suffixes_entry.pack(fill="x", padx=10)
 
